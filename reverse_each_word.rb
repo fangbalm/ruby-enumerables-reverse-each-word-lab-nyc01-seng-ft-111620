@@ -5,9 +5,7 @@ def reverse_each_word(string)
   #.reverse reverses an array
   words = string.split(" ")
   new_array = []
-  words.each do|string|
-    new_array << string.reverse
-  end
+  words.each {|string| new_array << string.reverse}
   new_array.join(" ")
 end
 
